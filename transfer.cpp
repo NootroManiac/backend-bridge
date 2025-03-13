@@ -96,7 +96,7 @@ int main()
 
     // Compile shader
     ID3DBlob *csBlob = nullptr;
-    hr = CompileComputeShader( L"ExampleCompute.hlsl", "CSMain", device, &csBlob );
+    hr = CompileComputeShader( L"shider.hlsl", "vertexShader", device, &csBlob );
     if ( FAILED(hr) )
     {
         device->Release();
